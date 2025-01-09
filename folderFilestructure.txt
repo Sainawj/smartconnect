@@ -1,0 +1,46 @@
+smartconnect/
+│
+├── app/                          # Main application package
+│   ├── __init__.py               # Initialize the Flask app and extensions
+│   ├── routes.py                 # Define API endpoints (Flask routes)
+│   ├── models.py                 # Define database schemas
+│   ├── services/                 # Backend logic and services
+│   │   ├── __init__.py           # Package initialization
+│   │   ├── auth_service.py       # User authentication logic
+│   │   ├── faq_service.py        # CRUD operations for FAQs
+│   │   ├── nlp_service.py        # NLP processing using NLTK
+│   │   ├── history_service.py    # Logic for conversation history
+│   ├── templates/                # HTML templates for frontend
+│   │   ├── base.html             # Base template (header, footer)
+│   │   ├── index.html            # Main chatbot interface
+│   │   ├── login.html            # Login page
+│   │   ├── register.html         # Registration page
+│   ├── static/                   # Static files (CSS, JS, images)
+│   │   ├── css/
+│   │   │   ├── styles.css        # Stylesheet
+│   │   ├── js/
+│   │   │   ├── chatbot.js        # Frontend chatbot logic
+│   │   ├── images/               # Static images
+│   │       ├── logo.png          # Logo image
+│   ├── utils/                    # Utility functions and helpers
+│       ├── __init__.py           # Package initialization
+│       ├── error_handlers.py     # Centralized error handling
+│       ├── token_utils.py        # Token management logic
+│
+├── config.py                     # Configuration settings for the app
+├── requirements.txt              # Python dependencies
+├── run.py                        # Entry point to start the Flask app
+│
+├── tests/                        # Unit and integration tests
+│   ├── __init__.py               # Test package initialization
+│   ├── test_routes.py            # Tests for API endpoints
+│   ├── test_auth.py              # Tests for authentication
+│   ├── test_nlp.py               # Tests for NLP processing
+│   ├── test_faq.py               # Tests for FAQ management
+│
+├── migrations/                   # Database migration scripts (Flask-Migrate)
+│   └── ...
+│
+├── .env                          # Environment variables (e.g., secrets, keys)
+├── .gitignore                    # Files and directories to ignore in Git
+└── README.md                     # Project overview and setup instructions
